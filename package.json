@@ -5,7 +5,9 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "rm -rf ./dist/* && parcel build --public-url ./"
+    "build": "rimraf dist && parcel build --public-url /Production-Private-Yoga-Yoga-Studio-React-Website-Template/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Damian Komoński",
   "license": "ISC",
@@ -18,7 +20,9 @@
     "@parcel/packager-raw-url": "^2.6.2",
     "@parcel/transformer-sass": "^2.6.2",
     "@parcel/transformer-webmanifest": "^2.6.2",
+    "gh-pages": "^6.3.0",
     "parcel": "^2.6.2",
-    "parcel-transformer-html-datasrc": "^1.3.3"
+    "parcel-transformer-html-datasrc": "^1.3.3",
+    "rimraf": "^5.0.0"
   }
 }
