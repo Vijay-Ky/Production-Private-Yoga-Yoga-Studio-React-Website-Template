@@ -1,0 +1,30 @@
+.section-title{
+    margin-bottom: 3rem;
+
+    @include media-breakpoint-up(lg){
+        margin-bottom: 4.375rem;
+    }
+    
+    h2{
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        color: #2D2424;
+
+        &:after{
+            content: '';
+            width: 74px;
+            height: 1px;
+            background: #2D2424;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: auto;
+            bottom: -17px;
+        }
+
+        span{
+            font-weight: 600;
+        }
+    }
+}

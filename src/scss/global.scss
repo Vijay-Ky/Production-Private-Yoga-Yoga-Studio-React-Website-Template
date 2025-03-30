@@ -1,0 +1,139 @@
+// Typography
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, .h1{
+    // line-height: 5.625rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+h2, .h2{
+    text-transform: uppercase;
+}
+
+h3, .h3{
+    // line-height: 48px;
+    text-transform: uppercase;
+}
+
+h4, .h4{
+    text-transform: uppercase;
+}
+
+h5, .h5{
+    text-transform: uppercase;
+}
+
+h6, .h6{
+    text-transform: uppercase;
+}
+
+.font-size-big{
+    font-size: 1.125rem;
+}
+
+// Body
+body{
+    font-weight: 400;
+    line-height: 30px;
+    overflow-x: hidden;
+}
+
+main{
+    @include media-breakpoint-up(xl){
+        margin-top: -146px;
+    }
+}
+
+header{
+    z-index: 999;
+}
+
+// Buttons
+.btn{
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+
+    &-primary{
+        background: #73A35A;
+        text-transform: uppercase;
+        color: #ffffff;
+
+        &:hover{
+            background: #4f7c38;
+            color: #ffffff;
+        }
+    }
+}
+
+// Backgrounds
+.background-image-1{
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 76px;
+    height: 320px;
+    z-index: -1;
+    left: 0;
+    top: -1.875rem;
+
+    @include media-breakpoint-up(sm){
+        width: 110px;
+        height: 463px;
+    }
+
+    @include media-breakpoint-up(md){
+        width: 125px;
+        height: 526px;
+    }
+
+    @include media-breakpoint-up(lg){
+        top: 1.5rem;
+    }
+
+    @include media-breakpoint-up(xl){
+        top: 10.75rem;
+        width: 264px;
+        height: 1115px;
+    }
+
+    @include media-breakpoint-up(xxl){
+        width: 334px;
+        height: 1411px;
+    }
+}
+
+.background-image-2{
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    width: 90px;
+    height: 416px;
+    right: 0;
+    top: 6.5rem;
+    z-index: -1;
+    
+    @include media-breakpoint-up(sm){
+        width: 119px;
+        height: 550px;
+        top: 3.5rem
+    }
+
+    @include media-breakpoint-up(md){
+        width: 146px;
+        height: 675px;
+        top: 1.5rem;
+    }
+
+    @include media-breakpoint-up(xl){
+        width: 288px;
+        height: 1333px;
+        top: 0;
+    }
+
+    @include media-breakpoint-up(xxl){
+        width: 361px;
+        height: 1673px;
+    }
+}

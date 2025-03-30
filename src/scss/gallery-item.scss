@@ -1,0 +1,30 @@
+.gallery-item{
+    float: left;
+    margin-bottom: 2rem;
+    position: relative;
+    transition: opacity 0.3s ease-in-out;
+
+    &:hover{
+        opacity: 0.7 !important;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    p{
+        position: absolute;
+        right: 24px;
+        bottom: 24px;
+        color: $white;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: 0;
+
+        @include media-breakpoint-up(md){
+            right: 40px;
+            bottom: 56px;
+        }
+    }
+}

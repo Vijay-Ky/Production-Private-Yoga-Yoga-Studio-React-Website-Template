@@ -1,0 +1,47 @@
+.big-quote{
+    position: relative;
+    margin-top: 5rem;
+
+    @include media-breakpoint-up(xl){
+        margin-top: 0;
+        padding-left: 146px;
+        margin-bottom: 0;
+    }
+
+    &:before{
+        content: '';
+        background: url('../img/icon-quote.svg') no-repeat;
+        background-size: 100%;
+        width: 64px;
+        height: 64px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -5rem;
+
+        @include media-breakpoint-up(xl){
+            top: 0;
+            width: 94px;
+            height: 94px;
+        }
+    }
+
+    blockquote, figcaption{
+        font-size: 1.5rem;
+        line-height: 2.75rem;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        color: #2D2424;
+        display: inline;
+
+        @include media-breakpoint-up(md){
+            font-size: 1.75rem;
+            line-height: 3rem;
+        }
+
+        @include media-breakpoint-up(xl){
+            font-size: 2rem;
+            line-height: 3.8125rem;
+        }
+    }
+}

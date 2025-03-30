@@ -1,0 +1,35 @@
+.event-calendar{
+    &__calendar{
+        &__table{
+            font-size: 0.938rem;
+            margin-bottom: 0;
+            min-width: 600px;
+
+            tr{
+                &:last-child{
+                    td{
+                        border-bottom: none;
+                    }
+                }
+
+                td{
+                    p{
+                        margin-bottom: 0;
+                    }
+
+                    .title{
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        color: #2D2424;
+                        font-family: 'Poppins', sans-serif;
+                        margin-bottom: 0;
+                    }
+        
+                    .description{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
